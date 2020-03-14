@@ -119,7 +119,6 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
 		mMediaPlayer = mp;
 		mMediaPlayer.setOnBufferingUpdateListener(this);
 		mVideoView.requestFocus();
-		mVideoView.seekTo(900);
 		mVideoView.start();
 		mVideoView.postDelayed(checkIfPlaying, 0);
 	}
