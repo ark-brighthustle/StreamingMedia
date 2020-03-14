@@ -120,13 +120,8 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
 		mMediaPlayer.setOnBufferingUpdateListener(this);
 		mVideoView.requestFocus();
 		mVideoView.seekTo(1000); 
-        mMediaPlayer.seekTo(1000);
-        mMediaPlayer.setOnSeekCompleteListener(new MediaPlayer.OnSeekCompleteListener() {
-            @Override
-            public void onSeekComplete(MediaPlayer mp) {
-            	mVideoView.start();
-			}
-        });
+        	mMediaPlayer.seekTo(1000);
+		mVideoView.start();
 		mVideoView.postDelayed(checkIfPlaying, 0);
 	}
 
